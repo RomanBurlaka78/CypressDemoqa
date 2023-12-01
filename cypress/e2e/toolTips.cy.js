@@ -2,7 +2,7 @@
 
 describe('Tool Tips', ()=> {
     beforeEach(()=> {
-      cy.visit('https://demoqa.com/tool-tips');
+      // cy.visit('https://demoqa.com/tool-tips');
     })
   
    it('button toolTips', ()=> {
@@ -18,8 +18,6 @@ describe('Tool Tips', ()=> {
 
     cy.get('.tooltip-inner').should('have.text', 'You hovered over the text field');
    })
-
- 
 
 
   })
