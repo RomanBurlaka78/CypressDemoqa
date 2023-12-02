@@ -18,7 +18,8 @@
   },
   "homepage": "https://github.com/RomanBV2022/cypressDemoqa#readme",
   "devDependencies": {
-    "cypress": "^13.6.0"
+    "cypress": "^13.6.0",
+    "cypress-xpath": "^2.0.1"
   },
   "dependencies": {
     "cypress-file-upload": "^5.0.8"
