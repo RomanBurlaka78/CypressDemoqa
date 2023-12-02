@@ -7,7 +7,7 @@ describe('Web Tables demoqa.com', ()=> {
     })
 
     it('add user', ()=> {
-        const testUser = ["Roman", "Romanowski","qwery@wp.pl","33","4500","IT RWD"];
+        const testUser = ["Roman", "Romanowski","33","qwery@wp.pl","4500","IT RWD"];
         cy.get('#addNewRecordButton').click();
         cy.wait(3000)
         .get('#firstName').clear().type(testUser[0])
@@ -25,7 +25,7 @@ describe('Web Tables demoqa.com', ()=> {
         cy.get('#submit').click();
         cy.get('#searchBox').type('Roman');
         cy.xpath('//div[@class="rt-td"]').contains('Roman');
-
+    
     })
 
     it('edit user', ()=> {
