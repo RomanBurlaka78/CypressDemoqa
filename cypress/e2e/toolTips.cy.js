@@ -2,7 +2,7 @@
 
 describe('Tool Tips', ()=> {
     beforeEach(()=> {
-      // cy.visit('https://demoqa.com/tool-tips');
+      cy.visit('https://demoqa.com/tool-tips');
     })
   
    it('button toolTips', ()=> {
