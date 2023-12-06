@@ -1,11 +1,8 @@
-import ElementsPage from './ElementsPage';
-//import variables from "../fixtures/variables.json";
+import ElementsPage from './elementsPages/ElementsPage';
 
 
 class HomePage  {
-
    getElements = () =>  cy.get('div.home-body>.category-cards> :first-child.card');
-
 
    gotoElementsPage() {
     this.getElements().click();
@@ -13,12 +10,9 @@ class HomePage  {
     return new ElementsPage();
    }
 
-
    navigateHomePage(url) {
-       cy.visit(url);
-       
+       cy.visit(url);    
     }
-
 
 }
 export default HomePage;
