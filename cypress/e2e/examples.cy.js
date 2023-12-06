@@ -12,3 +12,13 @@
             // console.log(testUser);
             //expect(testUser).to.be.equal(newArr)
         // })
+
+// map elements
+// showOutputData(userData) {
+//         this.getOutput().then(($els)=> {
+//             const outputData = Cypress._.map(Cypress.$.makeArray($els).map(($el)=>$el.textContent));
+            
+//            return outputData;
+//         }).should('deep_eql', userData)
+       
+//     }

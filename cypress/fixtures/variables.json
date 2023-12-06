@@ -4,8 +4,8 @@
         "lastName": "Rajewski",
         "email": "wery@wp.pl",
         "phone": 2143112,
-        "currentAddress": "EU",
-        "permanentAddress": "EU Poland"
+        "currentAddress":"EU",
+        "permanentAddress":"EU-Poland"
     },
     "URL": {
         "site": "https://demoqa.com"
