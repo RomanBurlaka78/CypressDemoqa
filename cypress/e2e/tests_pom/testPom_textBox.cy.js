@@ -1,7 +1,7 @@
 /// <reference types="cypress" />
 
-import HomePage from "./pom/HomePage";
-import variables from "../fixtures/variables.json";
+import HomePage from "../pom/HomePage";
+import variables from "../../fixtures/variables.json";
 
 describe('Textbox testing', ( )=> {
     const homePage =new HomePage();
