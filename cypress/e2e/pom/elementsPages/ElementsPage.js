@@ -1,7 +1,10 @@
 import CheckBoxPage from './CheckBoxPage';
+import RadioButtonPage from './RadioButtonPage';
 class ElementsPage {
     getTextBox = ()=> cy.get('div.accordion>:first-child .menu-list> :first-child');
     getCheckBox = () =>cy.get('div.accordion>:first-child .menu-list> :first-child+li');
+    getRadioButton = () =>cy.get('div.accordion>:first-child .menu-list> :first-child+li+li');
+
 
     clickGetTexBox() {
         this.getTextBox().click();
@@ -13,6 +16,12 @@ class ElementsPage {
         this.getCheckBox().click();
 
         return new CheckBoxPage();
+    }
+
+    clickRadioButton() {
+        this.getRadioButton().click();
+
+        return new RadioButtonPage();
     }
 }
 
