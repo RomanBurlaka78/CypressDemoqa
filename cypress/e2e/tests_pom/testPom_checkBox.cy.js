@@ -28,4 +28,23 @@ describe('suit Elements', ()=> {
             .getDropDownElement().should('be.visible');     
     })
 
+    it('test checkBox dropdown click', ()=> {
+        homePage
+            .gotoElementsPage()
+            .clickGetCheckBox()
+            .clickGetArrowCheckBox()
+            .clickDropDownElement()
+            .uncheckDropDownElement(); 
+    })
+
+    it.only('test checkBox dropdown click', ()=> {
+        homePage
+            .gotoElementsPage()
+            .clickGetCheckBox()
+            .clickGetArrowCheckBox()
+            .clickSelectByText('Documents');
+             
+    })
+    
+
 })

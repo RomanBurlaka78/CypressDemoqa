@@ -3,6 +3,7 @@ class CheckBoxPage {
     getArrowCheckBox = () => cy.get('.rct-text>button');
     getDropDownElement =()=>cy.get('#tree-node > ol > li > ol > li:nth-child(3) > span > label > span.rct-checkbox > svg');
     getUncheckElement = () => cy.get('#tree-node > ol > li > ol > li:nth-child(3) > span > label > span.rct-checkbox > svg > path')
+    getElementByText = () => cy.get('.rct-checkbox');
 
 
 
@@ -28,6 +29,19 @@ class CheckBoxPage {
         this.getUncheckElement().click();
 
         return new CheckBoxPage();
+    }
+
+    clickSelectByText(name) {
+        this.getElementByText().each($el => {
+            if($el.text() == name) {
+                cy.wrap($el).click();
+                console.log($el.text());
+                cy.log($el.text());
+            }
+        })
+
+        return new CheckBoxPage();
+
     }
 
 
