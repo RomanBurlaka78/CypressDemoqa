@@ -26,3 +26,9 @@ Cypress.on('uncaught:exception', (err, runnable) => {
   })
 
   import 'cypress-plugin-api';
+  import 'cypress-mochawesome-reporter/register';
+
+  const registerCypressGrep = require('@cypress/grep')
+  registerCypressGrep()
+
+
