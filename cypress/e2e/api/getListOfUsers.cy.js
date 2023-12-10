@@ -1,7 +1,5 @@
 /// <reference types = "cypress"/>
 
-
-
 describe('Test suit', ()=> {
     const  BASE_URL = 'https://reqres.in/api';
 //GET

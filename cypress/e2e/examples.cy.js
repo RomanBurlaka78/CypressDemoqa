@@ -22,3 +22,13 @@
 //         }).should('deep_eql', userData)
        
 //     }
+
+//********************run report************
+//  npx cypress run
+
+//*****************run one test **********
+// npx cypress run --spec "cypress\e2e\tests_pom\testPom_smoke.cy.js" 
+
+// ***********************run smoke test************
+// npx cypress run --spec "cypress\e2e\tests_pom\testPom_smoke.cy.js" --env grep="smoke" 
+

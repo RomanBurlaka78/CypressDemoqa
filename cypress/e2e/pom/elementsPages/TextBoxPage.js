@@ -5,10 +5,6 @@ class TextBoxPage {
     getCurrentAddres = ()=> cy.get('#currentAddress');
     getPermanentAddress = ()=> cy.get('#permanentAddress');
     getSubmitButton = () => cy.get('#submit');
-    // getNameUser = () => cy.get('#output  #name');
-    // getEmail =() => cy.get('#output #email');
-    // getCurrAddress = () => cy.get('#output #currentAddress');
-    // getPepmAdderss =() => cy.get('#output #permanentAddress');
     getOutput=() => cy.get('div#output');
 
     
