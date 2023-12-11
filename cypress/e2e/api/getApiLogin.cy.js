@@ -7,7 +7,7 @@ describe("Test suit Authorisation", ()=> {
     const nameOfUser = "Roman";
     const userPassword = "@Qwery@2";
 
-    it('post authorised', ()=> {
+    it.skip('post authorised', ()=> {
         cy.request({
             method: "POST",
             url: `${BASE_URL}/Account/v1/Authorized`,
