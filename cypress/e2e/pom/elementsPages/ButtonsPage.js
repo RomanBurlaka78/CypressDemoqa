@@ -31,21 +31,18 @@ class ButtonsPage {
     checkDoubleClickMessage(message) {
         this.getDoubleClickMessage().should('have.text', message)
         
-
         return this;
     }
 
     checkRigthClickMessage(message) {
         this.getRigthClickMessage().should('have.text', message)
         
-
         return this;
     }
 
     checkDinamicClickMessage(message) {
         this.getDimamicMessage().should('have.text', message)
         
-
         return this;
     }
 
