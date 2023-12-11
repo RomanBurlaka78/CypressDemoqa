@@ -37,7 +37,7 @@ describe('suit Elements', ()=> {
             .uncheckDropDownElement(); 
     })
 
-    it.only('test checkBox dropdown click', ()=> {
+    it('test checkBox dropdown click', ()=> {
         homePage
             .gotoElementsPage()
             .clickGetCheckBox()
