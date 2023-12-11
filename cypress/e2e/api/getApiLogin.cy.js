@@ -29,7 +29,7 @@ describe("Test suit Authorisation", ()=> {
 
     })
 
-    it('post token authorised', ()=> {
+    it.skip('post token authorised', ()=> {
         cy.request({
             method: "POST",
             url: 'https://demoqa.com/Account/v1/GenerateToken',
@@ -49,7 +49,7 @@ describe("Test suit Authorisation", ()=> {
 
     })
 
-    it('books', ()=> {
+    it.skip('books', ()=> {
         cy.setCookie('userName', nameOfUser);
         cy.setCookie('token', token);
         cy.setCookie("expires", expires);

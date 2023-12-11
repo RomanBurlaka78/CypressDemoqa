@@ -8,7 +8,7 @@ describe("Elements->buttons test", function() {
     const nameOfClickMe = 'Click Me';
     const dinamicMessage = 'You have done a dynamic click';
     const homePage =new HomePage();
-    beforeEach(()=> {
+    beforeEach(function () {
         homePage.navigateHomePage(variables.URL.site)
     })
 
