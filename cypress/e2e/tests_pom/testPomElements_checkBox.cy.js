@@ -7,7 +7,7 @@ describe('suit Elements', function() {
     const homePage =new HomePage();
 
     beforeEach(function() {
-        homePage.navigateHomePage(variables.URL.site);  
+       cy.visit(variables.URL.site)
     })
     it('test checkBox', ()=> {
         homePage

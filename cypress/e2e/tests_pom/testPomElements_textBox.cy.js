@@ -7,7 +7,7 @@ describe('Textbox testing', function( ){
     const homePage =new HomePage();
 
     beforeEach(function() {
-       homePage.navigateHomePage(variables.URL.site)
+        cy.visit(variables.URL.site)
     })
 
    it('fill textbox', function () {
