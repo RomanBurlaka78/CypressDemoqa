@@ -6,9 +6,9 @@ import variables from "../../fixtures/variables.json";
 describe('suit Elements', ()=> {
     const homePage =new HomePage();
 
-    beforeEach(()=> {
-        homePage.navigateHomePage(variables.URL.site);  
-    })
+    beforeEach(function() {
+        cy.visit(variables.URL.site)
+     })
     it('test "Yes" radioButton', ()=> {
         homePage
             .gotoElementsPage()

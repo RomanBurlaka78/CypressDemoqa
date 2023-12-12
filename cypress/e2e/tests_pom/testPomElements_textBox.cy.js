@@ -6,8 +6,8 @@ import variables from "../../fixtures/variables.json";
 describe('Textbox testing', function( ){
     const homePage =new HomePage();
 
-    beforeEach(()=> {
-        homePage.navigateHomePage(variables.URL.site);  
+    beforeEach(function() {
+        cy.visit(variables.URL.site)
     })
 
    it('fill textbox', function () {

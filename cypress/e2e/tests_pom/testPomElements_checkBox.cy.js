@@ -3,11 +3,11 @@
 import HomePage from "../pom/HomePage";
 import variables from "../../fixtures/variables.json";
 
-describe('suit Elements', ()=> {
+describe('suit Elements', function() {
     const homePage =new HomePage();
 
-    beforeEach(()=> {
-        homePage.navigateHomePage(variables.URL.site);  
+    beforeEach(function() {
+       cy.visit(variables.URL.site)
     })
     it('test checkBox', ()=> {
         homePage
@@ -19,7 +19,7 @@ describe('suit Elements', ()=> {
 
     })
 
-    it('test checkBox dropdown click', ()=> {
+    it('test checkBox dropdown click', function() {
         homePage
             .gotoElementsPage()
             .clickGetCheckBox()
@@ -28,7 +28,7 @@ describe('suit Elements', ()=> {
             .getDropDownElement().should('be.visible');     
     })
 
-    it('test checkBox dropdown click', ()=> {
+    it('test checkBox dropdown click', function() {
         homePage
             .gotoElementsPage()
             .clickGetCheckBox()
@@ -37,7 +37,7 @@ describe('suit Elements', ()=> {
             .uncheckDropDownElement(); 
     })
 
-    it.only('test checkBox dropdown click', ()=> {
+    it('test checkBox dropdown click', function() {
         homePage
             .gotoElementsPage()
             .clickGetCheckBox()

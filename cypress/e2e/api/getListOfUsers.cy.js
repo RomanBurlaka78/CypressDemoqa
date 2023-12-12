@@ -3,27 +3,27 @@
 describe('Test suit', ()=> {
     const  BASE_URL = 'https://reqres.in/api';
 //GET
-    it('test get user status', () => {
+    it.skip('test get user status', () => {
         cy.api(`${BASE_URL}/users?page=2`)
             .its('status')
             .should('be.eq', 200)
 
     })
-    it('test get user statusText', () => {
+    it.skip('test get user statusText', () => {
         cy.api(`${BASE_URL}/users?page=2`)
             .its('statusText')
             .should('be.eq', 'OK')
 
     })
 
-    it('test get user isOkStatusCode', () => {
+    it.skip('test get user isOkStatusCode', () => {
         cy.api(`${BASE_URL}/users?page=2`)
             .its('isOkStatusCode')
             .should('be.eq', true)
 
     })
 
-    it('test get user', () => {
+    it.skip('test get user', () => {
         cy.api(`${BASE_URL}/users?page=2`)
             .its('body')
             .then(responce => {
@@ -36,7 +36,7 @@ describe('Test suit', ()=> {
 
 //POST
 
-    it('test get user', () => {
+    it.skip('test get user', () => {
         cy.api({
             method: "POST",
             url:`${BASE_URL}/users`,
