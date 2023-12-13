@@ -7,7 +7,7 @@ describe('suit Elements', ()=> {
     const homePage =new HomePage();
 
     beforeEach(function() {
-        cy.visit(variables.URL.site)
+        cy.visit('https://demoqa.com')
      })
     it('test "Yes" radioButton', ()=> {
         homePage
