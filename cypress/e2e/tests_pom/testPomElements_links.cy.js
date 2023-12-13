@@ -8,7 +8,7 @@ describe('suit Elements-> links', function() {
     const title = "Links";
 
     beforeEach(function() {
-       cy.visit(variables.URL.site)
+        cy.visit('https://demoqa.com')
     })
     it('test links', ()=> {
         homePage

@@ -6,7 +6,7 @@ import variables from "../../fixtures/variables.json";
 describe('Web Tables demoqa.com', ()=> {
     const homePage = new HomePage(); 
     beforeEach(function() {
-        cy.visit(variables.URL.site)
+        cy.visit('https://demoqa.com')
      })
 
     it('add user, search user, delete user', ()=> {
