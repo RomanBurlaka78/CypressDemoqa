@@ -10,7 +10,6 @@ module.exports = defineConfig({
  
   
   e2e: {
-    baseUrl : 'https://demoqa.com/',
     viewportWidth: 1920,
     viewportHeight: 1080,
     chromeWebSecurity: false,

@@ -11,7 +11,7 @@ class HomePage  {
    }
 
    visitHomePage() {
-       cy.visit('/');   
+       cy.visit('https://demoqa.com/');   
        
        return this; 
     }
