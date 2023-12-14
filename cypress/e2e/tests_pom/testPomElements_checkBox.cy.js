@@ -7,7 +7,7 @@ describe('suit Elements', function() {
     const homePage =new HomePage();
 
     beforeEach(function() {
-        cy.visit('https://demoqa.com')
+        homePage.visitHomePage()
     })
     it('test checkBox', ()=> {
         homePage

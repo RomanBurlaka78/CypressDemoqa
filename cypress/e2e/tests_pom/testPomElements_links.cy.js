@@ -1,14 +1,13 @@
 /// <reference types = "cypress" />
 
 import HomePage from "../pom/HomePage";
-import variables from "../../fixtures/variables.json";
 
 describe('suit Elements-> links', function() {
     const homePage =new HomePage();
     const title = "Links";
 
     beforeEach(function() {
-        cy.visit('https://demoqa.com')
+        homePage.visitHomePage()
     })
     it('test links', ()=> {
         homePage

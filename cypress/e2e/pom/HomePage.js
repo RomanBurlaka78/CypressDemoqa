@@ -1,5 +1,3 @@
-
-
 import ElementsPage from "./elementsPages/ElementsPage";
 
 
@@ -12,8 +10,8 @@ class HomePage  {
     return new ElementsPage();
    }
 
-   navigateHomePage(url) {
-       cy.visit(url);   
+   visitHomePage() {
+       cy.visit('/');   
        
        return this; 
     }

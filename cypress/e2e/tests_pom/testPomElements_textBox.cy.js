@@ -7,7 +7,7 @@ describe('Textbox testing', function( ){
     const homePage =new HomePage();
 
     beforeEach(function() {
-        cy.visit('https://demoqa.com')
+        homePage.visitHomePage()
     })
 
    it('fill textbox', function () {

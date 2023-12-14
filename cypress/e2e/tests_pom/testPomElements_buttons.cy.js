@@ -9,7 +9,7 @@ describe("Elements->buttons test", function() {
     const dinamicMessage = 'You have done a dynamic click';
     const homePage =new HomePage();
     beforeEach(function () {
-        cy.visit(variables.URL.site)
+        homePage.visitHomePage()
     })
 
     it('test double click', function() {
