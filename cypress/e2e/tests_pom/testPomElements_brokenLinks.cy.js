@@ -2,13 +2,13 @@
 
 import HomePage from "../pom/HomePage";
 
-describe('suit Elements-> Brokenlinks', function() {
+describe('Elements-> Brokenlinks', function() {
     const homePage =new HomePage();
 
     beforeEach(function() {
         homePage.visitHomePage()
     })
-    it('test links', ()=> {
+    it('test BrokenImg', function() {
         homePage
             .gotoElementsPage()
             .clickBrokenLinks()

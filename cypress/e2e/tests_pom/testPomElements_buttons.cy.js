@@ -2,6 +2,7 @@
 import HomePage from "../pom/HomePage";
 import variables from "../../fixtures/variables.json";
 import ButtonsPage from "../pom/elementsPages/ButtonsPage";
+
 describe("Elements->buttons test", function() {
     const doubleClickMessage = 'You have done a double click';
     const rigthClickMessage = 'You have done a right click';
