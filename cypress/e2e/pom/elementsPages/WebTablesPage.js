@@ -13,8 +13,8 @@ class WebTablesPage {
    getRowUser = (firstName)=> cy.xpath('//div[@class="rt-td"]').contains(firstName);
    getAllUser = (firstName)=> cy.xpath('//div[@class="rt-td"]');
    getDeleteButton = () => cy.get('div.action-buttons>:last-child');
-
-
+   
+  
         clickAddNewRecord() {
             this.getAddNewReccord().click();
             
