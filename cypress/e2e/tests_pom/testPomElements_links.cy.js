@@ -9,7 +9,7 @@ describe('suit Elements-> links', function() {
     beforeEach(function() {
         homePage.visitHomePage()
     })
-    it('test links', ()=> {
+    it('test links', function() {
         homePage
             .gotoElementsPage()
             .clickLinks()
@@ -22,7 +22,7 @@ describe('suit Elements-> links', function() {
 
     })
 
-    it('test links', ()=> {
+    it('test links', function(){
         homePage
             .gotoElementsPage()
             .clickLinks()

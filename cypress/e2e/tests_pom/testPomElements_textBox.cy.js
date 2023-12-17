@@ -3,7 +3,7 @@
 import HomePage from "../pom/HomePage";
 import variables from "../../fixtures/variables.json";
 
-describe('Textbox testing', function( ){
+describe('Elements -> Textbox', function( ){
     const homePage =new HomePage();
 
     beforeEach(function() {

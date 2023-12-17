@@ -3,20 +3,18 @@
 import HomePage from "../pom/HomePage";
 import variables from "../../fixtures/variables.json";
 
-describe('suit Elements', function() {
+describe('Elements-> CheckBox', function() {
     const homePage =new HomePage();
 
     beforeEach(function() {
         homePage.visitHomePage()
     })
-    it('test checkBox', ()=> {
+    it('test checkBox', function() {
         homePage
             .gotoElementsPage()
             .clickGetCheckBox()
             .clickGetcheckElement()
             .getCheckElement().should('be.visible');
-            
-
     })
 
     it('test checkBox dropdown click', function() {
