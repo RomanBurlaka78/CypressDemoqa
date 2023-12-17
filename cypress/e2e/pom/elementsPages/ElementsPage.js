@@ -1,3 +1,4 @@
+import BrokenLinksPage from './BrokenLinksPage';
 import ButtonsPage from './ButtonsPage';
 import CheckBoxPage from './CheckBoxPage';
 import LinksPage from './LinksPage';
@@ -7,11 +8,12 @@ import WebTablesPage from './WebTablesPage';
 class ElementsPage {
     getTextBox = ()=> cy.get('div.accordion>:first-child .menu-list> :first-child');
     getCheckBox = () =>cy.get('div.accordion>:first-child .menu-list> :first-child+li');
-    getRadioButton = () =>cy.get('div.accordion>:first-child .menu-list> :first-child+li+li');
-    getWebTables = () =>cy.xpath('//li//span[contains(text(), "Web Tables")]');
-    getButtons = ()=>cy.get('div.accordion>:first-child .menu-list> :first-child+li+li+li+li');
+    getRadioButton = () =>cy.get('.accordion :first-child .menu-list>li#item-2');
+    getWebTables = () =>cy.get('.accordion :first-child .menu-list>li#item-3');
+    getButtons = ()=>cy.get('.accordion :first-child .menu-list>li#item-4');
     getLinks = () => cy.get('.accordion :first-child .menu-list>li#item-5');
-   
+    geBrokentLinks = () => cy.get('.accordion :first-child .menu-list>li#item-6');
+
 
 
     clickGetTexBox() {
@@ -49,6 +51,15 @@ class ElementsPage {
 
         return new LinksPage();
     }
+
+    clickBrokenLinks() {
+        this.geBrokentLinks().click()
+
+        return new BrokenLinksPage();
+    }
+
+
+
 }
 
 export default ElementsPage;
