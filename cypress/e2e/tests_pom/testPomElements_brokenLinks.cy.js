@@ -15,4 +15,18 @@ describe('Elements-> Brokenlinks', function() {
             .checkBrokenImg()
     })
 
+    it('test Valid Link', function() {
+        homePage
+            .gotoElementsPage()
+            .clickBrokenLinks()
+            .checkValidLink()     
+    })
+
+    it('test Broken Link', function() {
+        homePage
+            .gotoElementsPage()
+            .clickBrokenLinks()
+            .checkBrokenLink()       
+    })
+
 })
