@@ -1,6 +1,8 @@
 import BrokenLinksPage from './BrokenLinksPage';
 import ButtonsPage from './ButtonsPage';
 import CheckBoxPage from './CheckBoxPage';
+import DynamicPropertiesPage from './DynamicPropertiesPage';
+import DinamicPropertiesPage from './DynamicPropertiesPage';
 import LinksPage from './LinksPage';
 import RadioButtonPage from './RadioButtonPage';
 import TextBoxPage from './TextBoxPage';
@@ -13,6 +15,7 @@ class ElementsPage {
     getButtons = ()=>cy.get('.accordion :first-child .menu-list>li#item-4');
     getLinks = () => cy.get('.accordion :first-child .menu-list>li#item-5');
     geBrokentLinks = () => cy.get('.accordion :first-child .menu-list>li#item-6');
+    getDynamicProperties = () => cy.get('.accordion :first-child .menu-list>li#item-8');
 
 
 
@@ -56,6 +59,12 @@ class ElementsPage {
         this.geBrokentLinks().click()
 
         return new BrokenLinksPage();
+    }
+
+    clickDynamicProperties() {
+        this.getDynamicProperties().click();
+
+        return new  DynamicPropertiesPage();
     }
 
 
