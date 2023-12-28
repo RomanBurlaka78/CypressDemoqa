@@ -1,8 +1,12 @@
+import BrowserWindowsPage from "./alertsFramesWindowsPage/BrowserWindowsPage";
 import ElementsPage from "./elementsPages/ElementsPage";
 
 
 class HomePage  {
    getElements = () =>  cy.get('div.home-body>.category-cards> :first-child.card');
+   getAlertsFrames = () => cy.get('div.home-body>.category-cards> :first-child.card+.card+.card');
+
+   
 
    gotoElementsPage() {
     this.getElements().click();
@@ -14,6 +18,13 @@ class HomePage  {
        cy.visit('https://demoqa.com/');   
        
        return this; 
+    }
+
+    gotoBrowserWindowsPage() {
+        this.getAlertsFrames()
+            .click();
+
+            return new BrowserWindowsPage();
     }
 
 }
