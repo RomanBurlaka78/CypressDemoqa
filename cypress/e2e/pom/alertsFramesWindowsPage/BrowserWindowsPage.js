@@ -11,9 +11,19 @@ class BrowserWindowsPage {
 
 
     checkOpenNewPage() {
+        cy.window().then((win) => {
+            cy.stub(win, 'open', url => {
+                win.location.href = 'https://demoqa.com/sample';
+            }).as("popup")})
         this.getNewTab()
-            .url().should('have.text','https://demoqa.com/sample');
-         
+            .click();
+
+        cy.get('@popup')
+            .should("be.called")
+        cy.url()
+            .should('include', '/sample')
+
+        
             return this;
     }
 
