@@ -6,10 +6,6 @@ import variables from "../../fixtures/variables.json";
 describe('Elements -> Textbox', function( ){
     const homePage =new HomePage();
 
-    beforeEach(function() {
-        homePage.visitHomePage()
-    })
-
    it('fill textbox', function () {
     homePage
         .gotoElementsPage()

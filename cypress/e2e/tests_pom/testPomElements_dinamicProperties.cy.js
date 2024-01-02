@@ -4,10 +4,6 @@ import HomePage from "../pom/HomePage";
 
 describe('Elements-> Dynamic Properties', function() {
     const homePage =new HomePage();
-
-    beforeEach(function() {
-        homePage.visitHomePage()
-    })
   
     it('test text has random id', function() {
         homePage

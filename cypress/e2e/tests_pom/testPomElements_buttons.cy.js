@@ -9,10 +9,7 @@ describe("Elements->buttons test", function() {
     const nameOfClickMe = 'Click Me';
     const dinamicMessage = 'You have done a dynamic click';
     const homePage =new HomePage();
-    beforeEach(function () {
-        homePage.visitHomePage()
-    })
-
+ 
     it('test double click', function() {
         homePage
             .gotoElementsPage()

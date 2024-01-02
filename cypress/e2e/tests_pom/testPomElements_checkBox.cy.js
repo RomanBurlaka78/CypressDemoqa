@@ -6,9 +6,6 @@ import variables from "../../fixtures/variables.json";
 describe('Elements-> CheckBox', function() {
     const homePage =new HomePage();
 
-    beforeEach(function() {
-        homePage.visitHomePage()
-    })
     it('test checkBox', function() {
         homePage
             .gotoElementsPage()

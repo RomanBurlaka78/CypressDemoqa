@@ -5,10 +5,7 @@ import variables from "../../fixtures/variables.json";
 
 describe('Elements -> Web Tables', function() {
     const homePage = new HomePage(); 
-    beforeEach(function() {
-        homePage.visitHomePage()
-     })
-
+  
     it('add user, search user, delete user', function() {
 
         homePage

@@ -6,9 +6,6 @@ import variables from "../../fixtures/variables.json";
 describe('Elements -> Radiobutton', function() {
     const homePage =new HomePage();
 
-    beforeEach(function() {
-        homePage.visitHomePage()
-     })
     it('test "Yes" radioButton', function() {
         homePage
             .gotoElementsPage()
