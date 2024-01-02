@@ -6,9 +6,6 @@ describe('suit Elements-> links', function() {
     const homePage =new HomePage();
     const title = "Links";
 
-    beforeEach(function() {
-        homePage.visitHomePage()
-    })
     it('test links', function() {
         homePage
             .gotoElementsPage()

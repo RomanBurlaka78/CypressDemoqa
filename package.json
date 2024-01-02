@@ -4,7 +4,10 @@
   "description": "[The site has:](https://demoqa.com/)\r * elements\r * forms\r * allerts, frame & windows\r * widgets\r * interactions\r * book store application",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "npx cypress open",
+    "prescript" : "npx cypress run  --browser chrome",
+    "script" : "npx cypress run  --browser electron",
+    "postscript" : "npx cypress run  --browser firefox"
   },
   "repository": {
     "type": "git",
