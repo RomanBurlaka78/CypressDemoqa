@@ -1,15 +1,10 @@
 class BrowserWindowsPage {
     getNewTab = () => cy.get('#tabButton');
-    getBrowserWindow =() => cy.get('div.accordion :first-child +.element-group +div>div>ul> :first-child');
+   
     getNewWindow =() => cy.get('#windowButton');
     getWindowMessage =() => cy.get('#messageWindowButton');
 
-    openBrowserWindowPage() {
-        this.getBrowserWindow().click();
-
-        return this;
-    }
-
+ 
 
 
     checkOpenNewPage() {
@@ -60,10 +55,6 @@ class BrowserWindowsPage {
         
             return this;
     }
-
-
-
-
 
 
 }

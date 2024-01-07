@@ -1,14 +1,12 @@
+import AlertsFramesWindowsPage from "./alertsFramesWindowsPage/AlertsFramesWindowsPage";
 import BrowserWindowsPage from "./alertsFramesWindowsPage/BrowserWindowsPage";
 import ElementsPage from "./elementsPages/ElementsPage";
 
 
 class HomePage  {
    getElements = () =>  cy.get('div.home-body>.category-cards> :first-child.card');
-   getAlertsFrames = () => cy.get('div.home-body>.category-cards> :first-child.card+.card+.card');
+   getAlertsFramesWindows = () => cy.get('div.home-body>.category-cards> :first-child.card+.card+.card');
   
-
-
-   
 
    gotoElementsPage() {
     this.getElements().click();
@@ -22,11 +20,12 @@ class HomePage  {
        return this; 
     }
 
-    gotoBrowserWindowsPage() {
-        this.getAlertsFrames()
+    
+    gotoAllertsFramesWindows() {
+        this.getAlertsFramesWindows()
             .click();
 
-            return new BrowserWindowsPage();
+            return new AlertsFramesWindowsPage();
     }
 
     
