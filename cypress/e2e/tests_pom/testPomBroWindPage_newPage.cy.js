@@ -9,23 +9,23 @@ describe("Browser Windows Page->new page test", function() {
 
     it('test open new tab', function() {
         homePage
-            .gotoBrowserWindowsPage()
-            .openBrowserWindowPage()
+            .gotoAllertsFramesWindows()
+            .gotoBrowserWindowPage()
             .checkOpenNewPage()
     } )
 
     it('test open new window', function() {
         homePage
-            .gotoBrowserWindowsPage()   
-            .openBrowserWindowPage()
+            .gotoAllertsFramesWindows()
+            .gotoBrowserWindowPage()
             .gotoNewWindow()
             .checkOpenNewPage()
     } )
 
-    it.only('test   window  message', function() {
+    it('test   window  message', function() {
         homePage
-            .gotoBrowserWindowsPage()   
-            .openBrowserWindowPage()
+            .gotoAllertsFramesWindows()
+            .gotoBrowserWindowPage()
             .openWindowMessage()
             .checkWindowMessage()
     } )
