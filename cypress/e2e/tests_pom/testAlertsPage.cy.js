@@ -19,9 +19,17 @@ describe("alerts->test", function() {
             .gotoAllertsFramesWindows()
             .gotoAlertsPage()
             .clickButtonAllertAfterFiveSec()
-            .confirmAlertWait();        
+            .confirmAlertWait("This alert appeared after 5 seconds");        
             
     })
+
+    it ("alerts-> click button, confirm box will apear", function() {
+        homePage
+            .gotoAllertsFramesWindows()
+            .gotoAlertsPage()
+            .confirmBoxApear();
+    }) 
+
 
 
 }) 

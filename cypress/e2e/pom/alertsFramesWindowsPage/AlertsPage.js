@@ -39,6 +39,36 @@ class AlertsPage {
         return this;
     }
 
+    confirmBoxApear() {
+        this.getButtonConfirmBox()
+            .click();
+            cy.wait(3000);
+            cy.on('window:confirm', (str) => {
+                count += 1
+            
+                switch (count) {
+                  case 1:
+                    expect(str).to.eq('first confirm')
+                    expect(str).to.eq('OK')
+            
+                  // returning nothing here automatically
+                  // accepts the confirmation
+                  case 2:
+                    expect(str).to.eq('second confirm')
+                          
+                    // reject the confirmation
+                    return false
+
+                }
+            })
+            
+
+            return this;
+    }
+
+  
+   
+
 
 
 
